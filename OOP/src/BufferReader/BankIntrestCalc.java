@@ -17,15 +17,16 @@ public class BankIntrestCalc {
         float AnnualIntrest = Float.parseFloat(br.readLine());
 
         System.out.print("Enter time in Years: ");
-        int TimeinYears = Integer.parseInt(br.readLine());
+        int TimeInYears = Integer.parseInt(br.readLine());
 
-        float Intrest = (Principle * AnnualIntrest * TimeinYears);
+        float Intrest = (Principle * AnnualIntrest * TimeInYears);
 
         System.out.println("Custome Name: "+Name);
         System.out.println("Principle: "+ Principle);
         System.out.println("Annual Intrest: "+AnnualIntrest);
-        System.out.println("Time in Years: "+TimeinYears);
+        System.out.println("Time in Years: "+TimeInYears);
         System.out.println("Intrest: "+ Intrest);
+
 
     }
 
