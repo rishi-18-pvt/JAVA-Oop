@@ -1,0 +1,18 @@
+class Cake2 implements Runnable {
+    public void run() {
+        System.out.println("mixing ingredians for cake" + Thread.currentThread().getId());
+        System.out.println("Baking cake" + Thread.currentThread().getId());
+        System.out.println("Decorating the cake" + Thread.currentThread().getId());
+    }
+}
+public class ThreadBaking2{
+    public static void main(String[] args) {
+        int cakeCount = 4;
+        for(int i = 0;i<=cakeCount;i++){
+            Cake cake = new Cake();
+            Thread thread = new Thread(cake);
+            thread.start();
+        }
+
+    }
+}
