@@ -1,0 +1,12 @@
+interface A{
+    void disp();  // functional interface (An interface with only one abstract function)
+}
+public class Main {
+    public static void main(String[] args) {
+        A obj = () -> {
+            System.out.println("Lambda Expression");}; //Anonyms Function
+
+            obj.disp();
+
+    }
+}
